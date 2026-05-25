@@ -74,7 +74,7 @@ export function EntryScreen({ onEnter }: { onEnter: () => void }) {
                     transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
                     className="text-[10px] md:text-xs tracking-[0.5em] text-[#3B82F6]"
                   >
-                    Click anywhere to start...
+                    Click anywhere to start😊...
                   </motion.p>
                 ) : (
                   <motion.p

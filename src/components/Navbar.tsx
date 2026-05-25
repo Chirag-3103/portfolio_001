@@ -21,7 +21,7 @@ export function Navbar() {
     >
       <nav className="mx-auto max-w-[1500px] px-6 md:px-12 lg:px-20 flex items-center justify-between">
         <a href="#top" className="text-[11px] tracking-[0.4em] font-medium text-white">
-          CK<span className="text-[#3B82F6]">.</span>
+          CHIRAG<span className="text-[#3B82F6]">..</span>
         </a>
         <ul className="flex items-center gap-5 md:gap-8 text-[10px] md:text-xs tracking-[0.3em] text-neutral-400">
           {links.map((l) => (
