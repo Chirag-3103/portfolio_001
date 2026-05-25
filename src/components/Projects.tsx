@@ -23,7 +23,7 @@ export function Projects() {
 
   return (
     <section id="work" className="relative px-6 md:px-12 lg:px-20 py-40 md:py-56 border-t border-white/5">
-      <div className="max-w-[1500px] mx-auto mb-24 flex items-baseline justify-between">
+      <div className="max-w-375 mx-auto mb-24 flex items-baseline justify-between">
         <p className="text-[10px] tracking-[0.5em] text-[#3B82F6]">— SELECTED WORK</p>
         <p className="text-[10px] tracking-[0.4em] text-neutral-500">2024 / 2025</p>
       </div>
@@ -37,7 +37,7 @@ export function Projects() {
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                 style={{ background: "radial-gradient(ellipse at left, rgba(59,130,246,0.18), transparent 60%)" }}
               />
-              <div className="max-w-[1500px] mx-auto relative flex items-baseline justify-between gap-6">
+              <div className="max-w-375 mx-auto relative flex items-baseline justify-between gap-6">
                 <div className="flex items-baseline gap-8 md:gap-16 min-w-0">
                   <span className="text-[10px] tracking-[0.3em] text-neutral-600">{p.n}</span>
                   <h3 className="font-display font-semibold tracking-[-0.04em] leading-none text-[10vw] md:text-[7vw] lg:text-[6rem] text-neutral-400 group-hover:text-white transition-all duration-500 truncate">
