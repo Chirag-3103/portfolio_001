@@ -1,12 +1,10 @@
 {
-    "routes":[
-        {
-            "src": "/",
-            "dest": "/"
-        }
-        {
-            "src": "/test",
-            "dest": "/"
-        }
-    ]
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
