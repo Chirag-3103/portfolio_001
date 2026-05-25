@@ -1,7 +1,12 @@
 {
-  "framework": "vite",
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+    "routes":[
+        {
+            "src": "/",
+            "dest": "/"
+        }
+        {
+            "src": "/test",
+            "dest": "/"
+        }
+    ]
 }
