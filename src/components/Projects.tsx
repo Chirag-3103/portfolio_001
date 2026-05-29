@@ -23,8 +23,8 @@ export function Projects() {
 
   return (
     <section id="work" className="relative px-6 md:px-12 lg:px-20 py-40 md:py-56 border-t border-white/5">
-      <div className="max-w-375 mx-auto mb-24 flex items-baseline justify-between">
-        <p className="text-[10px] tracking-[0.5em] text-[#3B82F6]">— SELECTED WORK</p>
+      <div className="max-w-[1500px] mx-auto mb-24 flex flex-wrap items-baseline justify-between gap-6">
+        <p className="text-[10px] tracking-[0.5em] text-[#d3e505]">- PROJECTS DONE OR ONGOING</p>
         <p className="text-[10px] tracking-[0.4em] text-neutral-500">2024 / 2025</p>
       </div>
 
@@ -37,21 +37,21 @@ export function Projects() {
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                 style={{ background: "radial-gradient(ellipse at left, rgba(59,130,246,0.18), transparent 60%)" }}
               />
-              <div className="max-w-375 mx-auto relative flex items-baseline justify-between gap-6">
-                <div className="flex items-baseline gap-8 md:gap-16 min-w-0">
-                  <span className="text-[10px] tracking-[0.3em] text-neutral-600">{p.n}</span>
-                  <h3 className="font-display font-semibold tracking-[-0.04em] leading-none text-[10vw] md:text-[7vw] lg:text-[6rem] text-neutral-400 group-hover:text-white transition-all duration-500 truncate">
-                    <span className="group-hover:[text-shadow:0_0_30px_rgba(59,130,246,0.5)] transition-all duration-500 inline-block group-hover:scale-[1.02] origin-left">
+              <div className="max-w-[1500px] mx-auto relative grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(14rem,22rem)] gap-8 md:gap-12 items-start">
+                <div className="grid grid-cols-[2.5rem_minmax(0,1fr)] md:grid-cols-[4rem_minmax(0,1fr)] gap-4 md:gap-8 min-w-0">
+                  <span className="pt-3 md:pt-5 text-[10px] tracking-[0.3em] text-neutral-600">{p.n}</span>
+                  <h3 className="font-display font-semibold tracking-normal leading-[0.95] text-5xl sm:text-6xl lg:text-7xl text-neutral-400 group-hover:text-white transition-all duration-500 break-words">
+                    <span className="group-hover:[text-shadow:0_0_30px_rgba(59,130,246,0.5)] transition-all duration-500 inline-block group-hover:scale-[1.01] origin-left">
                       {p.title}
                     </span>
                   </h3>
                 </div>
-                <div className="hidden md:flex items-center gap-6 shrink-0">
-                  <p className="text-sm tracking-[0.2em] text-neutral-500 max-w-xs text-right">{p.desc}</p>
-                  <span className="text-[#3B82F6] text-2xl transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-1">↗</span>
+                <div className="hidden md:flex items-start justify-end gap-6 pt-5">
+                  <p className="text-sm leading-6 tracking-[0.16em] text-neutral-500 max-w-xs text-right">{p.desc}</p>
+                  <span className="text-[#3B82F6] text-2xl leading-none transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-1">-&gt;</span>
                 </div>
               </div>
-              <p className="md:hidden text-xs tracking-[0.2em] text-neutral-500 mt-4 pl-12">{p.desc}</p>
+              <p className="md:hidden text-xs leading-6 tracking-[0.16em] text-neutral-500 mt-6 pl-14">{p.desc}</p>
             </>
           );
 
@@ -65,8 +65,8 @@ export function Projects() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-80px" }}
                     transition={{ duration: 0.8, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-                    whileHover={{ x: 20 }}
-                    className="group block border-b border-white/5 py-10 md:py-14 px-6 md:px-12 lg:px-20 relative overflow-hidden text-left w-full"
+                    whileHover={{ x: 12 }}
+                    className="group block border-b border-white/5 py-12 md:py-16 px-6 md:px-12 lg:px-20 relative overflow-hidden text-left w-full"
                   >
                     {card}
                   </motion.button>
@@ -80,7 +80,7 @@ export function Projects() {
                     </DialogDescription>
                   </DialogHeader>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-6 text-sm text-neutral-200">
-                    Stay tuned — a polished conversational experience is on the way. For now, feel free to explore the other projects.
+                    Stay tuned - a polished conversational experience is on the way. For now, feel free to explore the other projects.
                   </div>
                   <DialogFooter>
                     <DialogClose className="inline-flex items-center justify-center rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/20">
@@ -102,8 +102,8 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.8, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-              whileHover={{ x: 20 }}
-              className="group block border-b border-white/5 py-10 md:py-14 px-6 md:px-12 lg:px-20 relative overflow-hidden"
+              whileHover={{ x: 12 }}
+              className="group block border-b border-white/5 py-12 md:py-16 px-6 md:px-12 lg:px-20 relative overflow-hidden"
             >
               {card}
             </motion.a>

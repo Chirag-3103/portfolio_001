@@ -37,12 +37,12 @@ export function Greet() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className="text-[#3B82F6] hover:text-white transition-colors">WRITE YOUR NAME</button>
+        <button className="text-[#f63b3b] hover:text-white transition-colors">WRITE YOUR NAME</button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Say hello</DialogTitle>
-          <DialogDescription>Enter your name and watch a friendly greeting animate.</DialogDescription>
+          <DialogDescription>Enter your name for a surprise!</DialogDescription>
         </DialogHeader>
 
         <div className="mt-4">
